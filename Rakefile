@@ -65,4 +65,5 @@ self.class.class_eval { include Helpers }
 desc 'Improve palm detection (requires X restart)'
 task :improve_palm_detection do
   _link :improve_palm_detection
+  warn "You need to restart X for the palm detection changes to take effect."
 end
