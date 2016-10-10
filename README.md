@@ -6,8 +6,10 @@ Installation
 
 ```sh
 bundle
-rake
+rake --tasks
 ```
+
+Then perform individual tasks. I may add a meta "do everything" task later.
 
 Copyright and License
 ---------------------
