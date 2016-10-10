@@ -46,7 +46,7 @@ module Helpers
 
   def links
     @_links ||= LINK_DEFINITIONS.reduce({}) do |memo, (key, (source, target))|
-      memo[key] = Link.new(source, target)
+      memo[key] = Link.new(File.expand_path(source), File.expand_path(target))
       memo
     end
   end
